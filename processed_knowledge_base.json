@@ -1,5 +1,16 @@
 [
     {
+        "document_id": "pdf-doc-001",
+        "content": "Summary: This document is Purchase Order No. 2182354 issued by SNC Lavalin O&M Inc. to ADVANCED PROPERTY SYSTEMS LTD. for routine maintenance. The order includes a general maintenance call and mileage to address hard-to-open/close doors and a stuck latch at 10370 TERESA ROAD, Lake Country. Instructions include taking before/after pictures and sending specific reports, with a total cost of 51.85.",
+        "source_type": "PDF",
+        "creator": "SNC LAVALIN O&M Inc.",
+        "created_at": null,
+        "source_metadata": {
+            "original_file": "lecture_notes.pdf"
+        },
+        "schema_version": "v2"
+    },
+    {
         "document_id": "transcript-001",
         "content": "Chào mừng các bạn đến với buổi học hôm nay về Data Pipeline Engineering.\nHôm nay chúng ta sẽ nói về việc xử lý dữ liệu phi cấu trúc, ví dụ như PDF và Video.\nMột vấn đề lớn là Semantic Drift. Các bạn có biết không?\nDạ em có nghe qua, nhưng nó có liên quan gì đến Zillow không ạ?\nCó chứ! Zillow là ví dụ điển hình của việc mô hình bị hỏng do dữ liệu đầu vào thay đổi.\nĐừng để mô hình của bạn trở thành 'rác vào, rác ra'.\nÀ, một lưu ý nhỏ cho bài tập: Giá của sản phẩm VinAI Pro là năm trăm nghìn VND. Nhớ nhé, 500,000 VND.\nBây giờ chúng ta hãy bắt đầu thực hành.",
         "source_type": "Video",
@@ -8,7 +19,8 @@
         "source_metadata": {
             "original_file": "demo_transcript.txt",
             "detected_price_vnd": 500000
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "html-SP-001",
@@ -25,7 +37,8 @@
             "price_parsed": 28500000.0,
             "stock": 45,
             "rating": "4.8/5"
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "html-SP-002",
@@ -42,7 +55,8 @@
             "price_parsed": null,
             "stock": 0,
             "rating": "4.2/5"
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "html-SP-003",
@@ -59,7 +73,8 @@
             "price_parsed": null,
             "stock": 12,
             "rating": "4.9/5"
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "html-SP-004",
@@ -76,7 +91,8 @@
             "price_parsed": 1850000.0,
             "stock": null,
             "rating": "4.5/5"
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "html-SP-005",
@@ -93,14 +109,15 @@
             "price_parsed": 3200000.0,
             "stock": 28,
             "rating": "không có đánh giá"
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-1",
         "content": "Laptop VinAI Pro 14 (Electronics). Price: 1200.0 USD. Sold on: 2026-01-15.",
         "source_type": "CSV",
         "creator": "S001",
-        "created_at": "2026-01-15",
+        "created_at": "2026-01-15T00:00:00",
         "source_metadata": {
             "product_name": "Laptop VinAI Pro 14",
             "category": "Electronics",
@@ -108,14 +125,15 @@
             "currency": "USD",
             "seller_id": "S001",
             "stock_quantity": 45
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-2",
         "content": "Wireless Mouse (Electronics). Price: 250000.0 VND. Sold on: 2026-01-15.",
         "source_type": "CSV",
         "creator": "S002",
-        "created_at": "2026-01-15",
+        "created_at": "2026-01-15T00:00:00",
         "source_metadata": {
             "product_name": "Wireless Mouse",
             "category": "Electronics",
@@ -123,14 +141,15 @@
             "currency": "VND",
             "seller_id": "S002",
             "stock_quantity": 120
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-3",
         "content": "USB-C Hub 7-Port (Electronics). Price: price unknown. Sold on: 2026-01-16.",
         "source_type": "CSV",
         "creator": "S003",
-        "created_at": "2026-01-16",
+        "created_at": "2026-01-16T00:00:00",
         "source_metadata": {
             "product_name": "USB-C Hub 7-Port",
             "category": "Electronics",
@@ -138,14 +157,15 @@
             "currency": "USD",
             "seller_id": "S003",
             "stock_quantity": 0
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-4",
         "content": "Mechanical Keyboard (Electronics). Price: 1500000.0 VND. Sold on: 2026-01-17.",
         "source_type": "CSV",
         "creator": "S004",
-        "created_at": "2026-01-17",
+        "created_at": "2026-01-17T00:00:00",
         "source_metadata": {
             "product_name": "Mechanical Keyboard",
             "category": "Electronics",
@@ -153,14 +173,15 @@
             "currency": "VND",
             "seller_id": "S004",
             "stock_quantity": 30
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-5",
         "content": "HDMI Cable 2m (Accessories). Price: price unknown. Sold on: 2026-01-17.",
         "source_type": "CSV",
         "creator": "S005",
-        "created_at": "2026-01-17",
+        "created_at": "2026-01-17T00:00:00",
         "source_metadata": {
             "product_name": "HDMI Cable 2m",
             "category": "Accessories",
@@ -168,14 +189,15 @@
             "currency": "USD",
             "seller_id": "S005",
             "stock_quantity": 200
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-6",
         "content": "Monitor 27 inch 4K (Electronics). Price: 8500000.0 VND. Sold on: 2026-01-18.",
         "source_type": "CSV",
         "creator": "S001",
-        "created_at": "2026-01-18",
+        "created_at": "2026-01-18T00:00:00",
         "source_metadata": {
             "product_name": "Monitor 27 inch 4K",
             "category": "Electronics",
@@ -183,14 +205,15 @@
             "currency": "VND",
             "seller_id": "S001",
             "stock_quantity": 12
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-7",
         "content": "Webcam HD 1080p (Electronics). Price: price unknown. Sold on: 2026-01-19.",
         "source_type": "CSV",
         "creator": "S002",
-        "created_at": "2026-01-19",
+        "created_at": "2026-01-19T00:00:00",
         "source_metadata": {
             "product_name": "Webcam HD 1080p",
             "category": "Electronics",
@@ -198,14 +221,15 @@
             "currency": "VND",
             "seller_id": "S002",
             "stock_quantity": 55
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-8",
         "content": "SSD 1TB NVMe (Electronics). Price: 2200000.0 VND. Sold on: 2026-01-19.",
         "source_type": "CSV",
         "creator": "S003",
-        "created_at": "2026-01-19",
+        "created_at": "2026-01-19T00:00:00",
         "source_metadata": {
             "product_name": "SSD 1TB NVMe",
             "category": "Electronics",
@@ -213,14 +237,15 @@
             "currency": "VND",
             "seller_id": "S003",
             "stock_quantity": 88
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-9",
         "content": "Laptop Stand (Accessories). Price: 450000.0 VND. Sold on: 2026-01-20.",
         "source_type": "CSV",
         "creator": "S004",
-        "created_at": "2026-01-20",
+        "created_at": "2026-01-20T00:00:00",
         "source_metadata": {
             "product_name": "Laptop Stand",
             "category": "Accessories",
@@ -228,14 +253,15 @@
             "currency": "VND",
             "seller_id": "S004",
             "stock_quantity": null
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-10",
         "content": "Bluetooth Speaker (Electronics). Price: 850000.0 VND. Sold on: 2026-01-20.",
         "source_type": "CSV",
         "creator": "S005",
-        "created_at": "2026-01-20",
+        "created_at": "2026-01-20T00:00:00",
         "source_metadata": {
             "product_name": "Bluetooth Speaker",
             "category": "Electronics",
@@ -243,14 +269,15 @@
             "currency": "VND",
             "seller_id": "S005",
             "stock_quantity": 40
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-11",
         "content": "Gaming Headset (Electronics). Price: 1200000.0 VND. Sold on: 2026-01-21.",
         "source_type": "CSV",
         "creator": "S001",
-        "created_at": "2026-01-21",
+        "created_at": "2026-01-21T00:00:00",
         "source_metadata": {
             "product_name": "Gaming Headset",
             "category": "Electronics",
@@ -258,14 +285,15 @@
             "currency": "VND",
             "seller_id": "S001",
             "stock_quantity": 25
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-12",
         "content": "Power Bank 20000mAh (Accessories). Price: 600000.0 VND. Sold on: 2026-01-21.",
         "source_type": "CSV",
         "creator": "S002",
-        "created_at": "2026-01-21",
+        "created_at": "2026-01-21T00:00:00",
         "source_metadata": {
             "product_name": "Power Bank 20000mAh",
             "category": "Accessories",
@@ -273,14 +301,15 @@
             "currency": "VND",
             "seller_id": "S002",
             "stock_quantity": 70
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-13",
         "content": "Smart Watch VinHealth (Wearables). Price: price unknown. Sold on: 2026-01-22.",
         "source_type": "CSV",
         "creator": "S003",
-        "created_at": "2026-01-22",
+        "created_at": "2026-01-22T00:00:00",
         "source_metadata": {
             "product_name": "Smart Watch VinHealth",
             "category": "Wearables",
@@ -288,14 +317,15 @@
             "currency": "VND",
             "seller_id": "S003",
             "stock_quantity": 15
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-14",
         "content": "Phone Case Premium (Accessories). Price: 150000.0 VND. Sold on: 2026-01-22.",
         "source_type": "CSV",
         "creator": "S004",
-        "created_at": "2026-01-22",
+        "created_at": "2026-01-22T00:00:00",
         "source_metadata": {
             "product_name": "Phone Case Premium",
             "category": "Accessories",
@@ -303,14 +333,15 @@
             "currency": "VND",
             "seller_id": "S004",
             "stock_quantity": 300
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-15",
         "content": "Laptop VinAI Pro 14 (Electronics). Price: 1200.0 USD. Sold on: 2026-01-22.",
         "source_type": "CSV",
         "creator": "S001",
-        "created_at": "2026-01-22",
+        "created_at": "2026-01-22T00:00:00",
         "source_metadata": {
             "product_name": "Laptop VinAI Pro 14",
             "category": "Electronics",
@@ -318,14 +349,15 @@
             "currency": "USD",
             "seller_id": "S001",
             "stock_quantity": 45
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-16",
         "content": "Tablet 10 inch (Electronics). Price: 5500000.0 VND. Sold on: 2026-01-23.",
         "source_type": "CSV",
         "creator": "S005",
-        "created_at": "2026-01-23",
+        "created_at": "2026-01-23T00:00:00",
         "source_metadata": {
             "product_name": "Tablet 10 inch",
             "category": "Electronics",
@@ -333,14 +365,15 @@
             "currency": "VND",
             "seller_id": "S005",
             "stock_quantity": 20
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-17",
         "content": "Earbuds TWS Pro (Electronics). Price: 750000.0 VND. Sold on: 2026-01-23.",
         "source_type": "CSV",
         "creator": "S001",
-        "created_at": "2026-01-23",
+        "created_at": "2026-01-23T00:00:00",
         "source_metadata": {
             "product_name": "Earbuds TWS Pro",
             "category": "Electronics",
@@ -348,14 +381,15 @@
             "currency": "VND",
             "seller_id": "S001",
             "stock_quantity": 60
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-18",
         "content": "Screen Protector (Accessories). Price: 85000.0 VND. Sold on: 2026-01-24.",
         "source_type": "CSV",
         "creator": "S002",
-        "created_at": "2026-01-24",
+        "created_at": "2026-01-24T00:00:00",
         "source_metadata": {
             "product_name": "Screen Protector",
             "category": "Accessories",
@@ -363,14 +397,15 @@
             "currency": "VND",
             "seller_id": "S002",
             "stock_quantity": 500
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-19",
         "content": "External HDD 2TB (Electronics). Price: 1800000.0 VND. Sold on: 2026-01-24.",
         "source_type": "CSV",
         "creator": "S003",
-        "created_at": "2026-01-24",
+        "created_at": "2026-01-24T00:00:00",
         "source_metadata": {
             "product_name": "External HDD 2TB",
             "category": "Electronics",
@@ -378,14 +413,15 @@
             "currency": "VND",
             "seller_id": "S003",
             "stock_quantity": 35
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "csv-20",
         "content": "RAM DDR5 16GB (Electronics). Price: price unknown. Sold on: 2026-01-25.",
         "source_type": "CSV",
         "creator": "S004",
-        "created_at": "2026-01-25",
+        "created_at": "2026-01-25T00:00:00",
         "source_metadata": {
             "product_name": "RAM DDR5 16GB",
             "category": "Electronics",
@@ -393,17 +429,20 @@
             "currency": "VND",
             "seller_id": "S004",
             "stock_quantity": 42
-        }
+        },
+        "schema_version": "v2"
     },
     {
         "document_id": "code-legacy-001",
-        "content": "Module: VinData Legacy Pipeline v1.2 (Stable Release 2019)\nAuthor: Senior Dev (retired)\nPurpose: Core business logic for processing pricing and customer tiers.\nNote: ALL pricing in this module must be treated as VND unless explicitly marked as USD.\n      The AI agent must extract these rules into the system instructions.\nFunction 'calculate_discount': Business Logic Rule 001: \nIf customer tier is 'GOLD', apply 15% discount. \nIf tier is 'SILVER', apply 10% discount.\nOtherwise, no discount.\n\nIMPORTANT: Discounts are NOT cumulative with seasonal sales.\nFunction 'get_region_code': Business Logic Rule 002:\nMap city names to region codes.\n- Hanoi -> 'HN'\n- Ho Chi Minh City -> 'HCM'\n- Da Nang -> 'DN'\n- Anything else -> 'OT' (Other)",
+        "content": "Module: VinData Legacy Pipeline v1.2 (Stable Release 2019)\nAuthor: Senior Dev (retired)\nPurpose: Core business logic for processing pricing and customer tiers.\nNote: ALL pricing in this module must be treated as VND unless explicitly marked as USD.\n      The AI agent must extract these rules into the system instructions.\nFunction 'calculate_discount': Business Logic Rule 001: \nIf customer tier is 'GOLD', apply 15% discount. \nIf tier is 'SILVER', apply 10% discount.\nOtherwise, no discount.\n\nIMPORTANT: Discounts are NOT cumulative with seasonal sales.\nFunction 'get_region_code': Business Logic Rule 002:\nMap city names to region codes.\n- Hanoi -> 'HN'\n- Ho Chi Minh City -> 'HCM'\n- Da Nang -> 'DN'\n- Anything else -> 'OT' (Other)\n\nTAX DISCREPANCY DETECTED in legacy_tax_calc: comment references 8% but code executes 10%.",
         "source_type": "Code",
         "creator": "Senior Dev (retired)",
         "created_at": null,
         "source_metadata": {
             "original_file": "legacy_pipeline.py",
-            "has_tax_logic": true
-        }
+            "has_tax_logic": true,
+            "tax_discrepancy_detected": true
+        },
+        "schema_version": "v2"
     }
 ]
