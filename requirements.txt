@@ -1,4 +1,4 @@
-google-generativeai
+google-genai
 pydantic
 pandas
 beautifulsoup4
