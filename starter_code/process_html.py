@@ -42,11 +42,13 @@ def parse_html_catalog(file_path):
         # --- Price cleaning ---
         price_value = _parse_price(raw_price)
 
-        # --- Stock cleaning (reject negatives) ---
+        # --- Stock cleaning: reject negatives and non-numeric ---
         try:
             stock = int(raw_stock)
+            if stock < 0:
+                stock = None
         except (ValueError, TypeError):
-            stock = 0
+            stock = None
 
         # Build UnifiedDocument-compatible dict
         doc = {
