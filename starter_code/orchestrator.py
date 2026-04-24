@@ -35,14 +35,46 @@ def main():
     output_path = os.path.join(os.path.dirname(SCRIPT_DIR), "processed_knowledge_base.json")
     # ----------------------------------------------
 
-    # TODO: Call each processing function (extract_pdf_data, clean_transcript, etc.)
-    # TODO: Run quality gates (run_quality_gate) before adding to final_kb
-    # TODO: Save final_kb to output_path using json.dump
+    # --- ETL EXECUTION ---
+    print("Starting Multi-Modal Ingestion Pipeline...")
     
-    # Example:
-    # doc = extract_pdf_data(pdf_path)
-    # if doc and run_quality_gate(doc):
-    #     final_kb.append(doc)
+    # 1. PDF
+    print("[PDF] Processing...")
+    pdf_doc = extract_pdf_data(pdf_path)
+    if pdf_doc and run_quality_gate(pdf_doc):
+        final_kb.append(pdf_doc)
+        
+    # 2. Transcript
+    print("[Transcript] Processing...")
+    trans_doc = clean_transcript(trans_path)
+    if trans_doc and run_quality_gate(trans_doc):
+        final_kb.append(trans_doc)
+        
+    # 3. HTML
+    print("[HTML] Processing...")
+    html_docs = parse_html_catalog(html_path)
+    for doc in html_docs:
+        if doc and run_quality_gate(doc):
+            final_kb.append(doc)
+            
+    # 4. CSV
+    print("[CSV] Processing...")
+    csv_docs = process_sales_csv(csv_path)
+    for doc in csv_docs:
+        if doc and run_quality_gate(doc):
+            final_kb.append(doc)
+            
+    # 5. Legacy Code
+    print("[Code] Processing...")
+    code_doc = extract_logic_from_code(code_path)
+    if code_doc and run_quality_gate(code_doc):
+        final_kb.append(code_doc)
+
+    # --- SAVE OUTPUT ---
+    with open(output_path, "w", encoding='utf-8') as f:
+        json.dump(final_kb, f, indent=4, ensure_ascii=False)
+    
+    print(f"Knowledge Base saved to {output_path}")
 
     end_time = time.time()
     print(f"Pipeline finished in {end_time - start_time:.2f} seconds.")

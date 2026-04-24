@@ -58,8 +58,8 @@ def parse_html_catalog(file_path):
                 f"Price: {price_value} | Stock: {stock} | Rating: {rating}"
             ),
             "source_type": "HTML",
-            "author": "VinShop",
-            "timestamp": None,
+            "creator": "VinShop",
+            "created_at": None,
             "source_metadata": {
                 "original_file": "product_catalog.html",
                 "product_id": product_id,

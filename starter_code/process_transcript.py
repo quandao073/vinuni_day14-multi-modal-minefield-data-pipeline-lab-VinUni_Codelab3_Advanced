@@ -75,10 +75,10 @@ def clean_transcript(file_path):
         "document_id": "transcript-001",
         "content": text,
         "source_type": "Video",
-        "author": primary_speaker,
-        "timestamp": None,
+        "creator": primary_speaker,
+        "created_at": None,
         "source_metadata": {
             "original_file": "demo_transcript.txt",
-            "extracted_price_vnd": price_vnd,
+            "detected_price_vnd": price_vnd,
         },
     }

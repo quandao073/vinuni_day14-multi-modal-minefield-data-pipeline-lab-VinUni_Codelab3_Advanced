@@ -6,7 +6,8 @@ from google import genai
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=api_key) if api_key else None
 
 # ==========================================
 # ROLE 2 (assigned to Người 1): ETL — PDF
@@ -62,6 +63,9 @@ def _clean_json_response(text: str) -> str:
 
 
 def extract_pdf_data(file_path):
+    if not client:
+        print("[PDF] Skipping: GEMINI_API_KEY not found.")
+        return None
     if not os.path.exists(file_path):
         print(f"Error: File not found at {file_path}")
         return None
@@ -81,8 +85,8 @@ Output exactly as a JSON object matching this exact format:
     "document_id": "pdf-doc-001",
     "content": "Summary: [Insert your 3-sentence summary here]",
     "source_type": "PDF",
-    "author": "[Insert author name here]",
-    "timestamp": null,
+    "creator": "[Insert author name here]",
+    "created_at": null,
     "source_metadata": {"original_file": "lecture_notes.pdf"}
 }
 """

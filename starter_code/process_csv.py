@@ -74,8 +74,8 @@ def process_sales_csv(file_path):
                 f"Sold on: {row['date_of_sale']}."
             ),
             "source_type": "CSV",
-            "author": str(row.get('seller_id', 'Unknown')),
-            "timestamp": row['date_of_sale'],
+            "creator": str(row.get('seller_id', 'Unknown')),
+            "created_at": row['date_of_sale'],
             "source_metadata": {
                 "product_name": str(row['product_name']),
                 "category": str(row['category']),

@@ -8,21 +8,21 @@ from datetime import datetime
 # Your task is to define the Unified Schema for all sources.
 # This is v1. Note: A breaking change is coming at 11:00 AM!
 
-SCHEMA_VERSION = "v1"
+SCHEMA_VERSION = "v2"
 
 VALID_SOURCE_TYPES = {"PDF", "Video", "HTML", "CSV", "Code"}
 
 class UnifiedDocument(BaseModel):
     """
-    Unified schema v1 for the multi-source Knowledge Base.
+    Unified schema v2 for the multi-source Knowledge Base.
     Every processing script must produce dicts that conform to this model.
     """
 
     document_id: str
     content: str
     source_type: str  # e.g., 'PDF', 'Video', 'HTML', 'CSV', 'Code'
-    author: Optional[str] = "Unknown"
-    timestamp: Optional[datetime] = None
+    creator: Optional[str] = "Unknown"
+    created_at: Optional[datetime] = None
 
     # You might want a dict for source-specific metadata
     source_metadata: dict = Field(default_factory=dict)
